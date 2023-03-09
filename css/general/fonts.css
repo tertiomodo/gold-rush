@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Impact';
+  src: local('Impact-Regular'),
+       url('../../assets/fonts/Impact-Regular.woff2'),
+       url('../../assets/fonts/Impact-Regular.woff1');
+  font-style: normal;
+  font-display: swap;
+}

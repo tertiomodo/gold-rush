@@ -1,0 +1,10 @@
+/* General */
+@import './normalize.css';
+@import './fonts.css';
+@import './general.css';
+
+/* Screens */
+@import '../screens/lobby.css';
+
+/* Media */
+@import './media.css';
