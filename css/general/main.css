@@ -5,6 +5,7 @@
 
 /* Screens */
 @import '../screens/lobby.css';
+@import '../screens/royal-coins.css';
 
 /* Media */
-@import './media.css';
+/* @import './media.css'; */

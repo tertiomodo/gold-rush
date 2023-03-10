@@ -1,0 +1,97 @@
+.royal-coins-bg {
+  background: url('../../assets/img/royal-coins/royal-coins-bg.jpg') no-repeat center center / cover;
+}
+
+.royal-coins__slots-wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.royal-coins__slots-doors {
+  width: 100%;
+  max-width: 869px;
+  height: 506px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 21px;
+  background: rgba(21, 9, 31, 0.73);
+  border: 1px solid #FFE600;
+  border-radius: 20px;
+}
+
+.royal-coins__slots-door {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(-505px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.royal-coins__slots-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  transform: translateY(0);
+}
+
+.animation {
+  animation: spin normal 0.2s linear infinite;
+}
+
+.royal-coins__slots-box {
+  width: 275px;
+  height: 154px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.slots-box-grape {
+  background: url('../../assets/img/royal-coins/RC-grape.png') no-repeat center center / contain;
+}
+
+.slots-box-lemon {
+  background: url('../../assets/img/royal-coins/RC-lemon.png') no-repeat center center / contain;
+}
+
+.slots-box-watermelon {
+  background: url('../../assets/img/royal-coins/RC-watermelon.png') no-repeat center center / contain;
+}
+
+.slots-box-seven {
+  background: url('../../assets/img/royal-coins/RC-seven.png') no-repeat center center / contain;
+}
+
+.slots-box-bar {
+  background: url('../../assets/img/royal-coins/RC-bar.png') no-repeat center center / contain;
+}
+
+.slots-box-plum {
+  background: url('../../assets/img/royal-coins/RC-plum.png') no-repeat center center / contain;
+}
+
+.slots-box-bells {
+  background: url('../../assets/img/royal-coins/RC-bells.png') no-repeat center center / contain;
+}
+
+.slots-box-cherry {
+  background: url('../../assets/img/royal-coins/RC-cherry.png') no-repeat center center / contain;
+}
+
+.slots-box-orange {
+  background: url('../../assets/img/royal-coins/RC-orange.png') no-repeat center center / contain;
+}
