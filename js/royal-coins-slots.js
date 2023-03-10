@@ -60,6 +60,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
       box.forEach(item => boxes[i].append(item));
     }
+
+    /* 
+    2 - 50% win (numbers: 1 or 0)
+    3 - 33% win (numbers: 1 or 0, 2)
+    4 - 25% win (numbers: 1 or 0, 2, 3)
+    5 - 20% win (numbers: 1 or 0, ... 4)
+    6 - 17% win (numbers: 1 or 0, ... 5)
+    7 - 14% win (numbers: 1 or 0, ... 6)
+    */
+    winChance(4);
+  }
+
+  // Definition the chance of winning
+  function winChance(chance) {
+    const random = Math.floor(Math.random() * chance);
+
+    let winId = null;
+
+    // number 1 - win, other numbers - lose
+    if (random === 1) {
+      for (let i = 0; i < boxes.length; i++) {
+        const shuffledCopy = [...boxes[i].children];
+
+        if (i === 0) winId = shuffledCopy[1].getAttribute('data-id');
+
+        if (winId !== null && i > 0) {
+          const index = shuffledCopy.findIndex(item => item.getAttribute('data-id') === winId);
+          
+          [shuffledCopy[1], shuffledCopy[index]] = [shuffledCopy[index], shuffledCopy[1]];
+        }
+
+        shuffledCopy.forEach(item => boxes[i].append(item));
+      }
+    }
   }
 
   function showResult() {

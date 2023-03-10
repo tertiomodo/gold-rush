@@ -8,15 +8,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 60px;
 }
 
 .royal-coins__slots-doors {
   width: 100%;
   max-width: 869px;
-  height: 506px;
+  height: 100%;
+  max-height: 506px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 1;
   padding: 8px 21px;
   background: rgba(21, 9, 31, 0.73);
   border: 1px solid #FFE600;
@@ -52,8 +55,9 @@
 }
 
 .royal-coins__slots-box {
-  width: 275px;
-  height: 154px;
+  width: 100%;
+  max-width: 275px;
+  min-height: 154px;
   display: flex;
   justify-content: center;
   align-items: center;
