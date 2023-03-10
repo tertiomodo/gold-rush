@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="./js/privacy.js"></script>
-  <script defer src="./js/royal-coins.js"></script>
+  <script defer src="./js/royal-coins-open.js"></script>
+  <script defer src="./js/royal-coins-slots.js"></script>
   <link rel="stylesheet" href="./css/general/main.css">
   <link rel="icon" href="./assets/svg/icon.ico">
   <title>Gold Rush</title>
@@ -13,7 +14,7 @@
 <body class="body">
   <header class="header">
     <div class="header__bg">
-      <button class="header__back-btn"></button>
+      <button class="header__back-btn hide"></button>
       <div class="header__currency-wrap">
         <div class="header__points-wrap">
           <div class="header__points-star"></div>
@@ -88,35 +89,80 @@
       <div class="lobby__games-wrap">
         <ul class="lobby__games-list">
           <li class="lobby__game-item">
-            <a href="##" class="lobby__game-link">
-              <img class="lobby__game-img" src="./assets/img/royal-coins2.png" alt="Royal Coins 2">
-            </a>
+            <button class="lobby__game-button" id="royal-coins">
+              <img class="lobby__game-img" src="./assets/img/lobby/royal-coins2.png" alt="Royal Coins 2">
+            </button>
           </li>
           <li class="lobby__game-item">
-            <a href="##" class="lobby__game-link">
-              <img class="lobby__game-img" src="./assets/img/wild-cash.png" alt="Wild Cash">
-            </a>
+            <button class="lobby__game-button" id="wild-cash">
+              <img class="lobby__game-img" src="./assets/img/lobby/wild-cash.png" alt="Wild Cash">
+            </button>
           </li>
           <li class="lobby__game-item">
-            <a href="##" class="lobby__game-link">
-              <img class="lobby__game-img" src="./assets/img/jackpot.png" alt="Jackpot">
-            </a>
+            <button class="lobby__game-button" id="jackpot">
+              <img class="lobby__game-img" src="./assets/img/lobby/jackpot.png" alt="Jackpot">
+            </button>
           </li>
           <li class="lobby__game-item">
-            <a href="##" class="lobby__game-link">
-              <img class="lobby__game-img" src="./assets/img/hot-fruits.png" alt="Hot Fruits">
-            </a>
+            <button class="lobby__game-button" id="hot-fruits">
+              <img class="lobby__game-img" src="./assets/img/lobby/hot-fruits.png" alt="Hot Fruits">
+            </button>
           </li>
           <li class="lobby__game-item">
-            <a href="##" class="lobby__game-link">
-              <img class="lobby__game-img" src="./assets/img/lucky-lady.png" alt="Lucky Lady Moon">
-            </a>
+            <button class="lobby__game-button" id="lucky-lady">
+              <img class="lobby__game-img" src="./assets/img/lobby/lucky-lady.png" alt="Lucky Lady Moon">
+            </button>
           </li>
         </ul>
       </div>
     </div>
+    <div class="royal-coins hide">
+      <div class="royal-coins__slots-wrap">
+        <div class="royal-coins__slots-doors">
+          <div class="royal-coins__slots-door">
+            <div class="royal-coins__slots-boxes">
+              <div class="royal-coins__slots-box slots-box-seven" data-id="4"></div>
+              <div class="royal-coins__slots-box slots-box-bar" data-id="5"></div>
+              <div class="royal-coins__slots-box slots-box-plum" data-id="6"></div>
+              <div class="royal-coins__slots-box slots-box-bells" data-id="7"></div>
+              <div class="royal-coins__slots-box slots-box-cherry" data-id="8"></div>
+              <div class="royal-coins__slots-box slots-box-orange" data-id="9"></div>
+              <div class="royal-coins__slots-box slots-box-grape" data-id="1"></div>
+              <div class="royal-coins__slots-box slots-box-lemon" data-id="2"></div>
+              <div class="royal-coins__slots-box slots-box-watermelon" data-id="3"></div>
+            </div>
+          </div>
+          <div class="royal-coins__slots-door">
+            <div class="royal-coins__slots-boxes">
+              <div class="royal-coins__slots-box slots-box-grape" data-id="1"></div>
+              <div class="royal-coins__slots-box slots-box-lemon" data-id="2"></div>
+              <div class="royal-coins__slots-box slots-box-watermelon" data-id="3"></div>
+              <div class="royal-coins__slots-box slots-box-bells" data-id="7"></div>
+              <div class="royal-coins__slots-box slots-box-cherry" data-id="8"></div>
+              <div class="royal-coins__slots-box slots-box-orange" data-id="9"></div>
+              <div class="royal-coins__slots-box slots-box-seven" data-id="4"></div>
+              <div class="royal-coins__slots-box slots-box-bar" data-id="5"></div>
+              <div class="royal-coins__slots-box slots-box-plum" data-id="6"></div>
+            </div>
+          </div>
+          <div class="royal-coins__slots-door">
+            <div class="royal-coins__slots-boxes">
+              <div class="royal-coins__slots-box slots-box-grape" data-id="1"></div>
+              <div class="royal-coins__slots-box slots-box-lemon" data-id="2"></div>
+              <div class="royal-coins__slots-box slots-box-watermelon" data-id="3"></div>
+              <div class="royal-coins__slots-box slots-box-seven" data-id="4"></div>
+              <div class="royal-coins__slots-box slots-box-bar" data-id="5"></div>
+              <div class="royal-coins__slots-box slots-box-plum" data-id="6"></div>
+              <div class="royal-coins__slots-box slots-box-bells" data-id="7"></div>
+              <div class="royal-coins__slots-box slots-box-cherry" data-id="8"></div>
+              <div class="royal-coins__slots-box slots-box-orange" data-id="9"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer class="footer">
+  <footer class="footer hide">
     <div class="footer__bg">
       <div class="footer__contol-panel">
         <div class="footer__bet-wrap">

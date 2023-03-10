@@ -1,0 +1,20 @@
+/* Размеры с макета */
+@keyframes spin {
+  0% {
+    transform: translateY(-466px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.royal-coins__slots-doors {
+  width: 412px;
+  height: 240px;
+}
+
+.royal-coins__slots-box {
+  width: 105px;
+  height: 65px;
+}
