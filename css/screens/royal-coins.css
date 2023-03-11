@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px;
+  padding: 0 60px;
 }
 
 .royal-coins__slots-doors {
@@ -19,7 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 1;
   padding: 8px 21px;
   background: rgba(21, 9, 31, 0.73);
   border: 1px solid #FFE600;
@@ -34,7 +33,7 @@
 
 @keyframes spin {
   0% {
-    transform: translateY(-505px);
+    transform: translateY(-1000px);
   }
 
   100% {
@@ -51,12 +50,13 @@
 }
 
 .animation {
-  animation: spin normal 0.2s linear infinite;
+  animation: spin normal 0.3s linear infinite;
 }
 
 .royal-coins__slots-box {
   width: 100%;
   max-width: 275px;
+  height: 100%;
   min-height: 154px;
   display: flex;
   justify-content: center;

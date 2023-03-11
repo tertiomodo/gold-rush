@@ -1,20 +1,160 @@
-/* Размеры с макета */
-@keyframes spin {
-  0% {
-    transform: translateY(-466px);
+@media (max-width: 800px) {
+  @keyframes spin {
+    0% {
+      transform: translateY(-466px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
   }
-
-  100% {
-    transform: translateY(0px);
+  
+  .royal-coins__slots-doors {
+    width: 412px;
+    height: 240px;
+  }
+  
+  .royal-coins__slots-box {
+    max-width: 105px;
+    min-height: 65px;
   }
 }
 
-.royal-coins__slots-doors {
-  width: 412px;
-  height: 240px;
+@media (max-width: 700px) {
+  .privacy {
+    padding: 12px;
+  }
+
+  .lobby__game-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .wild-cash__slots-wrap {
+    padding: 12px;
+  }
+
+  .header__points-star {
+    left: 3px;
+    width: 27px;
+    height: 29px;
+  }
+
+  .header__points-wrap {
+    justify-content: flex-end;
+  }
+
+  .header__points-wrap {
+    min-width: 142px;
+  }
+
+  .header__money-wrap {
+    min-width: 172px;
+    justify-content: flex-end;
+  }
+
+  .header__money-coin {
+    width: 27px;
+    height: 29px;
+  }
+
+  .header__bg,
+  .footer__bg {
+    padding: 0 5px;
+  }
+
+  .header__currency-wrap {
+    width: 81%;
+  }
+
+  .footer__prize-bg {
+    width: 103px;
+    padding: 5px;
+  }
+
+  .footer__bet-wrap {
+    width: 150px;
+  }
+
+  .footer__bet-bg {
+    min-width: 67px;
+    padding: 5px;
+  }
+
+  .header__back-btn {
+    width: 30px;
+    height: 30px;
+    background-position: top 4px left 6px;
+  }
+
+  .footer__bet-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer__buttons {
+    width: 150px;
+  }
+
+  .footer__btn {
+    width: 70px;
+  }
+
+  .footer__win-text {
+    font-size: 15px;
+  }
+
+  .footer__win-sum {
+    font-size: 17px;
+  }
+
+  .footer__bet {
+    font-size: 17px;
+  }
+
+  .footer__btn-text {
+    font-size: 15px;
+  }
 }
 
-.royal-coins__slots-box {
-  width: 105px;
-  height: 65px;
+@media (max-width: 486px) {
+  .wild-cash-bg {
+    background: url(../../assets/img/wild-cash/wild-cash-bg.jpg) no-repeat center center / 740px 360px;
+  }
+}
+
+@media (max-width: 436px) {
+  .wild-cash-bg {
+    background: url(../../assets/img/wild-cash/wild-cash-bg.jpg) no-repeat center center / 707px 360px;
+  }
+}
+
+@media (max-width: 418px) {
+  .wild-cash-bg {
+    background: url(../../assets/img/wild-cash/wild-cash-bg.jpg) no-repeat center center / 674px 360px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wild-cash-bg {
+    background: url(../../assets/img/wild-cash/wild-cash-bg.jpg) no-repeat center center / 645px 360px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer__btn {
+    width: 50px;
+  }
+
+  .footer__buttons {
+    width: 113px;
+  }
+
+  .footer__bet-wrap {
+    width: 129px;
+  }
+
+  .wild-cash-bg {
+    background: url(../../assets/img/wild-cash/wild-cash-bg.jpg) no-repeat center center / 595px 360px;
+  }
 }

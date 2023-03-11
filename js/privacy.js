@@ -12,11 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
       lobby.classList.remove('hide');
       privacy.classList.add('hide');
       saveAccept(true);
+      saveState('Lobby');
     });
   }
 
   // Save privacy policy information
   function saveAccept(accept) {
-    sessionStorage.setItem('Privacy Policy', JSON.stringify(accept));
+    sessionStorage.setItem('Privacy Policy', accept);
+  }
+
+  // Save lobby state
+  function saveState(state) {
+    sessionStorage.setItem('Current state', state);
   }
 });

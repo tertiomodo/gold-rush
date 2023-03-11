@@ -75,7 +75,7 @@
 }
 
 .lobby__games-list::-webkit-scrollbar {
-  height: 5px;
+  height: 10px;
   background-color: transparent;
 }
 

@@ -2,8 +2,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const lobby = document.querySelector('.lobby');
   const footer = document.querySelector('.footer');
-  const royalCoins = document.querySelector('.royal-coins');
-  const gameBtn = document.getElementById('royal-coins');
+  const wildCash = document.querySelector('.wild-cash');
+  const gameBtn = document.getElementById('wild-cash');
   const main = document.querySelector('.main');
   const backBtn = document.querySelector('.header__back-btn');
   const winText = document.querySelector('.footer__win-text');
@@ -14,22 +14,22 @@ document.addEventListener('DOMContentLoaded', () => {
     return sessionStorage.getItem('Current state');
   }
 
-  if (getState() === 'Royal Coins') {
+  if (getState() === 'Wild Cash') {
     lobby.classList.add('hide');
     footer.classList.remove('hide');
-    royalCoins.classList.remove('hide');
-    main.classList.add('royal-coins-bg');
+    wildCash.classList.remove('hide');
+    main.classList.add('wild-cash-bg');
     backBtn.classList.remove('hide');
   }
 
   // Open the game after click on game image
   gameBtn.addEventListener('click', () => {
-    saveState('Royal Coins');
+    saveState('Wild Cash');
 
     lobby.classList.add('hide');
     footer.classList.remove('hide');
-    royalCoins.classList.remove('hide');
-    main.classList.add('royal-coins-bg');
+    wildCash.classList.remove('hide');
+    main.classList.add('wild-cash-bg');
     backBtn.classList.remove('hide');
   });
 
@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     lobby.classList.remove('hide');
     footer.classList.add('hide');
-    royalCoins.classList.add('hide');
-    main.classList.remove('royal-coins-bg');
+    wildCash.classList.add('hide');
+    main.classList.remove('wild-cash-bg');
     backBtn.classList.add('hide');
     winText.textContent = '';
     winSum.textContent = '';
