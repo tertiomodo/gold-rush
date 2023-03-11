@@ -1,6 +1,6 @@
 // Game logic and shuffle functions
 document.addEventListener('DOMContentLoaded', () => {
-  const boxes = document.querySelectorAll('.royal-coins__slots-boxes');
+  const boxes = document.querySelectorAll('.wild-cash__slots-boxes');
   const spinBtn = document.querySelector('.footer__btn-spin');
   const autoBtn = document.querySelector('.footer__btn-auto');
   const bet = document.querySelector('.footer__bet');
@@ -10,15 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const winSum = document.querySelector('.footer__win-sum');
   const money = document.querySelector('.header__money');
   const points = document.querySelector('.current-points');
-  
+
   let isActive = false;
   let betSum = 100;
   let balance = 100;
   let stars = 0;
-  
+
   function getState() {
     const state = sessionStorage.getItem('Current state');
-    
+
     return {state};
   }
 
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   spinBtn.addEventListener('click', () => {
-    if (!isActive && betSum > 0 && balance >= betSum && balance > 0 && getState().state === 'Royal Coins') {
+    if (!isActive && betSum > 0 && balance >= betSum && balance > 0 && getState().state === 'Wild Cash') {
       isActive = true;
       balance -= betSum;
       saveToStorage('Money', balance);
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let interval;
   autoBtn.addEventListener('click', () => {
-    if (!isActive && betSum > 0 && balance >= betSum && getState().state === 'Royal Coins') {
+    if (!isActive && betSum > 0 && balance >= betSum && getState().state === 'Wild Cash') {
       isActive = true;
       balance -= betSum;
       saveToStorage('Money', balance);
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       spin();
       
       interval = setInterval(() => {
-        if (!isActive && betSum > 0 && balance >= betSum && getState().state === 'Royal Coins') {
+        if (!isActive && betSum > 0 && balance >= betSum && getState().state === 'Wild Cash') {
           isActive = true;
           balance -= betSum;
           saveToStorage('Money', balance);
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function spin() {
     boxes.forEach(item => {
-      item.classList.add('animation');
+      item.classList.add('spin');
     });
 
     if (stars < 9000) {
@@ -109,17 +109,17 @@ document.addEventListener('DOMContentLoaded', () => {
     shuffle();
     
     const timeoutFirst = setTimeout(() => {
-      boxes[0].classList.remove('animation');
+      boxes[0].classList.remove('spin');
       clearTimeout(timeoutFirst);
     }, 2000);
 
     const timeoutSecond = setTimeout(() => {
-      boxes[1].classList.remove('animation');
+      boxes[1].classList.remove('spin');
       clearTimeout(timeoutSecond);
     }, 3000);
 
     const timeoutThird = setTimeout(() => {
-      boxes[2].classList.remove('animation');
+      boxes[2].classList.remove('spin');
       clearTimeout(timeoutThird);
       isActive = false;
     }, 4000);
@@ -161,10 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
       for (let i = 0; i < boxes.length; i++) {
         const shuffledCopy = [...boxes[i].children];
 
-        if (i === 0) winId = shuffledCopy[1].getAttribute('data-royal-coins');
+        if (i === 0) winId = shuffledCopy[1].getAttribute('data-wild-cash');
 
         if (winId !== null && i > 0) {
-          const index = shuffledCopy.findIndex(item => item.getAttribute('data-royal-coins') === winId);
+          const index = shuffledCopy.findIndex(item => item.getAttribute('data-wild-cash') === winId);
           
           [shuffledCopy[1], shuffledCopy[index]] = [shuffledCopy[index], shuffledCopy[1]];
         }
@@ -175,16 +175,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function showWin() {
-    const firstSlot = boxes[0].children[1].getAttribute('data-royal-coins');
-    const secondSlot = boxes[1].children[1].getAttribute('data-royal-coins');
-    const thirdSlot = boxes[2].children[1].getAttribute('data-royal-coins');
+    const firstSlot = boxes[0].children[1].getAttribute('data-wild-cash');
+    const secondSlot = boxes[1].children[1].getAttribute('data-wild-cash');
+    const thirdSlot = boxes[2].children[1].getAttribute('data-wild-cash');
 
     if (firstSlot === secondSlot && firstSlot === thirdSlot && secondSlot === thirdSlot) {
       balance += betSum * 5;
       saveToStorage('Money', balance);
 
       const timeout = setTimeout(() => {
-        boxes[2].classList.remove('animation');
+        boxes[2].classList.remove('spin');
         clearTimeout(timeout);
         winText.textContent = 'WIN';
         money.textContent = balance;

@@ -1,5 +1,6 @@
 .body {
   font-family: 'Impact';
+  background-color: #000000;
 }
 
 .body::-webkit-scrollbar {
@@ -56,13 +57,14 @@
 
 .header__points-wrap {
   width: 40%;
-  min-width: 241px;
+  min-width: 185px;
   min-height: 36px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6px 75px;
+  margin-right: 5px;
+  padding: 6px;
   background: #370063;
   border: 1px solid #FFB800;
   box-shadow: inset 0px 4px 3px rgba(32, 0, 65, 0.91);
@@ -97,7 +99,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6px 67px;
+  padding: 6px;
   background: #370063;
   border: 1px solid #FFB800;
   box-shadow: inset 0px 4px 3px rgba(32, 0, 65, 0.91);
@@ -161,20 +163,21 @@
 }
 
 .footer__bet-bg {
-  width: 86px;
+  min-width: 86px;
+  max-width: 111px;
   height: 38px;
   padding: 7px 14px;
   background: #320950;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__bet {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   letter-spacing: 0.05em;
   background: linear-gradient(180deg, #EBFF00 0%, #FFA800 100%);
   color: transparent;
@@ -224,7 +227,7 @@
 .footer__btn {
   width: 99px;
   height: 46px;
-  padding: 11px 27px;
+  padding: 5px;
   border-radius: 11px;
 }
 
