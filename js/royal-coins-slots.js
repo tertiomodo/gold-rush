@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const winSum = document.querySelector('.footer__win-sum');
   const money = document.querySelector('.header__money');
   const points = document.querySelector('.current-points');
+  const backBtn = document.querySelector('.header__back-btn');
   
   let isActive = false;
   let betSum = 100;
-  let balance = 100;
+  let balance = 100000;
   let stars = 0;
   
   function getState() {
@@ -92,6 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  backBtn.addEventListener('click', () => {
+    clearInterval(interval);
+  });
+
   function spin() {
     boxes.forEach(item => {
       item.classList.add('animation');
@@ -147,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     6 - 17% win (numbers: 1 or 0, ... 5)
     7 - 14% win (numbers: 1 or 0, ... 6)
     */
-    winChance(2);
+    winChance(5);
   }
 
   // Definition the chance of winning
