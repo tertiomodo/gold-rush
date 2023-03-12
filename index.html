@@ -9,27 +9,55 @@
   <script defer src="./js/royal-coins-open.js"></script>
   <script defer src="./js/royal-coins-slots.js"></script>
   <script defer src="./js/wild-cash-open.js"></script>
-  <script defer src="./js/wild-cash-slots.js"></script>
   <link rel="stylesheet" href="./css/general/main.css">
   <link rel="icon" href="./assets/svg/icon.ico">
   <title>Gold Rush</title>
 </head>
 <body class="body">
-  <header class="header">
-    <div class="header__bg">
-      <button class="header__back-btn hide"></button>
-      <div class="header__currency-wrap">
-        <div class="header__points-wrap">
-          <div class="header__points-star"></div>
-          <span class="header__points"><span class="current-points">0</span>/9000</span>
-        </div>
-        <div class="header__money-wrap">
-          <div class="header__money-coin"></div>
-          <span class="header__money">0</span>
+  <div class="control-panel">
+    <header class="header">
+      <div class="header__bg">
+        <button class="header__back-btn hide"></button>
+        <div class="header__currency-wrap">
+          <div class="header__points-wrap">
+            <div class="header__points-star"></div>
+            <span class="header__points"><span class="current-points">0</span>/9000</span>
+          </div>
+          <div class="header__money-wrap">
+            <div class="header__money-coin"></div>
+            <span class="header__money">0</span>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+    <footer class="footer hide">
+      <div class="footer__bg">
+        <div class="footer__control-panel">
+          <div class="footer__bet-wrap">
+            <button class="footer__bet-button bet-button-minus">-</button>
+            <div class="footer__bet-bg">
+              <span class="footer__bet">0</span>
+            </div>
+            <button class="footer__bet-button bet-button-plus">+</button>
+          </div>
+          <div class="footer__prize-wrap">
+            <div class="footer__prize-bg">
+              <span class="footer__win-text"></span>
+              <span class="footer__win-sum"></span>
+            </div>
+          </div>
+          <div class="footer__buttons">
+            <button class="footer__btn-auto footer__btn">
+              <span class="footer__btn-auto-text footer__btn-text">AUTO</span>
+            </button>
+            <button class="footer__btn-spin footer__btn">
+              <span class="footer__btn-spin-text footer__btn-text">SPIN</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
   <main class="main">
     <div class="privacy hide">
       <h1 class="privacy__title">Privacy Policy</h1>
@@ -171,87 +199,60 @@
             <div class="wild-cash__slots-boxes">
               <div class="wild-cash__slots-box slots-box-grape" data-wild-cash="1"></div>
               <div class="wild-cash__slots-box slots-box-lemon" data-wild-cash="2"></div>
+              <div class="wild-cash__slots-box slots-box-orange" data-wild-cash="7"></div>
               <div class="wild-cash__slots-box slots-box-watermelon" data-wild-cash="3"></div>
               <div class="wild-cash__slots-box slots-box-seven" data-wild-cash="4"></div>
-              <div class="wild-cash__slots-box slots-box-bar" data-wild-cash="5"></div>
               <div class="wild-cash__slots-box slots-box-plum" data-wild-cash="6"></div>
-              <div class="wild-cash__slots-box slots-box-bells" data-wild-cash="7"></div>
+              <div class="wild-cash__slots-box slots-box-cherry" data-royal-coins="8"></div>
+            </div>
+          </div>
+          <div class="wild-cash__slots-door">
+            <div class="wild-cash__slots-boxes">
+              <div class="wild-cash__slots-box slots-box-watermelon" data-wild-cash="3"></div>
+              <div class="wild-cash__slots-box slots-box-cherry" data-royal-coins="8"></div>
+              <div class="wild-cash__slots-box slots-box-seven" data-wild-cash="4"></div>
+              <div class="wild-cash__slots-box slots-box-grape" data-wild-cash="1"></div>
+              <div class="wild-cash__slots-box slots-box-lemon" data-wild-cash="2"></div>
+              <div class="wild-cash__slots-box slots-box-plum" data-wild-cash="6"></div>
+              <div class="wild-cash__slots-box slots-box-orange" data-wild-cash="7"></div>
             </div>
           </div>
           <div class="wild-cash__slots-door">
             <div class="wild-cash__slots-boxes">
               <div class="wild-cash__slots-box slots-box-grape" data-wild-cash="1"></div>
               <div class="wild-cash__slots-box slots-box-lemon" data-wild-cash="2"></div>
+              <div class="wild-cash__slots-box slots-box-orange" data-wild-cash="7"></div>
               <div class="wild-cash__slots-box slots-box-watermelon" data-wild-cash="3"></div>
               <div class="wild-cash__slots-box slots-box-seven" data-wild-cash="4"></div>
-              <div class="wild-cash__slots-box slots-box-bar" data-wild-cash="5"></div>
               <div class="wild-cash__slots-box slots-box-plum" data-wild-cash="6"></div>
-              <div class="wild-cash__slots-box slots-box-bells" data-wild-cash="7"></div>
+              <div class="wild-cash__slots-box slots-box-cherry" data-royal-coins="8"></div>
             </div>
           </div>
           <div class="wild-cash__slots-door">
             <div class="wild-cash__slots-boxes">
               <div class="wild-cash__slots-box slots-box-grape" data-wild-cash="1"></div>
               <div class="wild-cash__slots-box slots-box-lemon" data-wild-cash="2"></div>
+              <div class="wild-cash__slots-box slots-box-orange" data-wild-cash="7"></div>
               <div class="wild-cash__slots-box slots-box-watermelon" data-wild-cash="3"></div>
               <div class="wild-cash__slots-box slots-box-seven" data-wild-cash="4"></div>
-              <div class="wild-cash__slots-box slots-box-bar" data-wild-cash="5"></div>
               <div class="wild-cash__slots-box slots-box-plum" data-wild-cash="6"></div>
-              <div class="wild-cash__slots-box slots-box-bells" data-wild-cash="7"></div>
+              <div class="wild-cash__slots-box slots-box-cherry" data-royal-coins="8"></div>
             </div>
           </div>
           <div class="wild-cash__slots-door">
             <div class="wild-cash__slots-boxes">
-              <div class="wild-cash__slots-box slots-box-grape" data-wild-cash="1"></div>
+              <div class="wild-cash__slots-box slots-box-plum" data-wild-cash="6"></div>
+              <div class="wild-cash__slots-box slots-box-cherry" data-royal-coins="8"></div>
               <div class="wild-cash__slots-box slots-box-lemon" data-wild-cash="2"></div>
+              <div class="wild-cash__slots-box slots-box-grape" data-wild-cash="1"></div>
               <div class="wild-cash__slots-box slots-box-watermelon" data-wild-cash="3"></div>
               <div class="wild-cash__slots-box slots-box-seven" data-wild-cash="4"></div>
-              <div class="wild-cash__slots-box slots-box-bar" data-wild-cash="5"></div>
-              <div class="wild-cash__slots-box slots-box-plum" data-wild-cash="6"></div>
-              <div class="wild-cash__slots-box slots-box-bells" data-wild-cash="7"></div>
-            </div>
-          </div>
-          <div class="wild-cash__slots-door">
-            <div class="wild-cash__slots-boxes">
-              <div class="wild-cash__slots-box slots-box-grape" data-wild-cash="1"></div>
-              <div class="wild-cash__slots-box slots-box-lemon" data-wild-cash="2"></div>
-              <div class="wild-cash__slots-box slots-box-watermelon" data-wild-cash="3"></div>
-              <div class="wild-cash__slots-box slots-box-seven" data-wild-cash="4"></div>
-              <div class="wild-cash__slots-box slots-box-bar" data-wild-cash="5"></div>
-              <div class="wild-cash__slots-box slots-box-plum" data-wild-cash="6"></div>
-              <div class="wild-cash__slots-box slots-box-bells" data-wild-cash="7"></div>
+              <div class="wild-cash__slots-box slots-box-orange" data-wild-cash="7"></div>
             </div>
           </div>  
         </div>
       </div>
     </div>
   </main>
-  <footer class="footer hide">
-    <div class="footer__bg">
-      <div class="footer__contol-panel">
-        <div class="footer__bet-wrap">
-          <button class="footer__bet-button bet-button-minus">-</button>
-          <div class="footer__bet-bg">
-            <span class="footer__bet">0</span>
-          </div>
-          <button class="footer__bet-button bet-button-plus">+</button>
-        </div>
-        <div class="footer__prize-wrap">
-          <div class="footer__prize-bg">
-            <span class="footer__win-text"></span>
-            <span class="footer__win-sum"></span>
-          </div>
-        </div>
-        <div class="footer__buttons">
-          <button class="footer__btn-auto footer__btn">
-            <span class="footer__btn-auto-text footer__btn-text">AUTO</span>
-          </button>
-          <button class="footer__btn-spin footer__btn">
-            <span class="footer__btn-spin-text footer__btn-text">SPIN</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
