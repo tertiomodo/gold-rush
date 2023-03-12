@@ -1,10 +1,15 @@
+.royal-coins {
+  width: 100%;
+  height: 100%;
+}
+
 .royal-coins-bg {
   background: url('../../assets/img/royal-coins/royal-coins-bg.jpg') no-repeat center center / cover;
 }
 
 .royal-coins__slots-wrap {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +25,7 @@
   justify-content: center;
   align-items: center;
   padding: 8px 21px;
+  overflow: hidden;
   background: rgba(21, 9, 31, 0.73);
   border: 1px solid #FFE600;
   border-radius: 20px;

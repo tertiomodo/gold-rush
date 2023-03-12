@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 800px), (max-height: 630px) {
   @keyframes spin {
     0% {
       transform: translateY(-466px);

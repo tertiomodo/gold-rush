@@ -13,12 +13,19 @@
   background: url('../../assets/img/lobby/lobby-bg.jpg') no-repeat center center / cover;
 }
 
-.header {
+.control-panel {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   z-index: 10;
+}
+
+.header {
+  width: 100%;
 }
 
 .header__bg,
@@ -127,14 +134,10 @@
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  z-index: 10;
 }
 
-.footer__contol-panel {
+.footer__control-panel {
   width: 100%;
   display: flex;
   justify-content: space-between;

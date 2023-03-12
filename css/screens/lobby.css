@@ -72,6 +72,7 @@
   margin: 0 20px;
   gap: 20px;
   overflow-x: scroll;
+  z-index: 10;
 }
 
 .lobby__games-list::-webkit-scrollbar {

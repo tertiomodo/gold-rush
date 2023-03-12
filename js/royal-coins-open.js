@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     saveState('Royal Coins');
 
     lobby.classList.add('hide');
-    footer.classList.remove('hide');
+    footer.classList.remove('hide'); //
     royalCoins.classList.remove('hide');
     main.classList.add('royal-coins-bg');
     backBtn.classList.remove('hide');
